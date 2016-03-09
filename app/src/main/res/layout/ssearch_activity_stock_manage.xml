@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ssearch_common_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ssearch_titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/search_card_marginLeft"
+                android:layout_marginRight="@dimen/search_card_marginRight"
+                android:layout_marginTop="@dimen/search_card_marginTop"
+                android:background="@drawable/ssearch_card_background_top"
+                android:gravity="center_vertical" >
+
+                <EditText
+                    android:id="@+id/stock_edit_text"
+                    android:layout_width="0.0dip"
+                    android:layout_height="48.0dip"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/ssearch_add_stock_hint"
+                    android:paddingLeft="10.0dip"
+                    android:paddingRight="10.0dip"
+                    android:singleLine="true"
+                    android:textColorHint="@color/ssearch_card_summary" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/stock_add_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48.0dip"
+                    android:background="@drawable/ssearch_selector_common_green_btn"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:paddingLeft="18.0dip"
+                    android:paddingRight="18.0dip"
+                    android:text="@string/ssearch_add"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/ssearch_title" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <ScrollView
+                    android:id="@+id/content_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/search_card_marginTop" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:id="@+id/hot_stocks_layout"
+                            style="@style/ssearch_card_item_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/search_card_marginTop"
+                            android:orientation="vertical" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/search_card_header_height"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15.0dip"
+                                    android:text="@string/ssearch_hot_stocks"
+                                    android:textColor="@color/ssearch_card_category"
+                                    android:textSize="17.0sp" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/ssearch_divider_horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/stock_tv1"
+                                    style="@style/ssearch_card_stock_manage_item" />
+
+                                <include layout="@layout/ssearch_divider_vertical" />
+
+                                <TextView
+                                    android:id="@+id/stock_tv2"
+                                    style="@style/ssearch_card_stock_manage_item" />
+
+                                <include layout="@layout/ssearch_divider_vertical" />
+
+                                <TextView
+                                    android:id="@+id/stock_tv3"
+                                    style="@style/ssearch_card_stock_manage_item" />
+                            </LinearLayout>
+
+                            <include layout="@layout/ssearch_divider_horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" >
+
+                                <TextView
+                                    android:id="@+id/stock_tv4"
+                                    style="@style/ssearch_card_stock_manage_item" />
+
+                                <include layout="@layout/ssearch_divider_vertical" />
+
+                                <TextView
+                                    android:id="@+id/stock_tv5"
+                                    style="@style/ssearch_card_stock_manage_item" />
+
+                                <include layout="@layout/ssearch_divider_vertical" />
+
+                                <TextView
+                                    android:id="@+id/stock_tv6"
+                                    style="@style/ssearch_card_stock_manage_item" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/card_stocks_layout"
+                            style="@style/ssearch_card_item_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/search_card_marginTop" >
+
+                            <RelativeLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="@dimen/search_card_header_height"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_alignParentLeft="true"
+                                    android:gravity="center_vertical"
+                                    android:paddingLeft="15.0dip"
+                                    android:text="@string/ssearch_current_stocks"
+                                    android:textColor="@color/ssearch_card_category"
+                                    android:textSize="17.0sp" />
+                            </RelativeLayout>
+
+                            <include layout="@layout/ssearch_divider_horizontal" />
+
+                            <LinearLayout
+                                android:id="@+id/card_stock_container"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+
+                <FrameLayout
+                    android:id="@+id/suggess_stocks_layout"
+                    style="@style/ssearch_card_item_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginTop="@dimen/search_card_marginTop"
+                    android:visibility="gone" >
+
+                    <ListView
+                        android:id="@+id/suggess_list_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@color/ssearch_divider_color"
+                        android:dividerHeight="@dimen/ssearch_divider_height"
+                        android:listSelector="@android:color/transparent" >
+                    </ListView>
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/suggess_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="25.0dip"
+                    android:textColor="@color/ssearch_card_summary"
+                    android:textSize="@dimen/search_card_summary_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:visibility="gone" >
+        </View>
+
+        <ProgressBar
+            android:id="@id/loading_bar"
+            android:layout_width="@dimen/common_progressbar"
+            android:layout_height="@dimen/common_progressbar"
+            android:layout_gravity="center"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ssearch_selector_list_item"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/search_suggestion_item_margin_left"
+    android:paddingRight="@dimen/search_suggestion_item_margin_right" >
+
+    <ImageView
+        android:id="@id/search_list_item_icon"
+        android:layout_width="@dimen/search_list_item_icon_size"
+        android:layout_height="@dimen/search_list_item_icon_size"
+        android:layout_margin="4.0dip"
+        android:tint="#b6b6b6" />
+
+    <LinearLayout
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6.0dip"
+        android:layout_weight="1.0"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@id/search_list_item_title"
+            style="@style/ssearch_tv_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5.0dip"
+            android:singleLine="true" />
+
+        <TextView
+            android:id="@id/search_list_item_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingBottom="4.0dip"
+            android:textColor="@color/ssearch_card_summary"
+            android:textSize="@dimen/search_list_info_font_size" />
+    </LinearLayout>
+
+</LinearLayout>

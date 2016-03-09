@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SSearch_Titlebar">
+        <attr name="ssearch_titlebar_title" format="reference|string" />
+        <attr name="ssearch_titlebar_right_icon" format="reference" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52.0dip"
+        android:layout_marginLeft="@dimen/search_bar_margin"
+        android:layout_marginRight="@dimen/search_bar_margin"
+        android:background="@drawable/ssearch_card_background"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true" >
+
+        <LinearLayout
+            android:id="@+id/search_menu_layout"
+            android:layout_width="38.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ssearch_selector_list_item"
+            android:gravity="center" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:scaleType="center"
+                android:src="@drawable/ssearch_ic_menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_clear_layout"
+            android:layout_width="38.0dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/search_box_icon_size"
+                android:layout_height="@dimen/search_box_icon_size"
+                android:duplicateParentState="true"
+                android:scaleType="center"
+                android:src="@drawable/ssearch_selector_clear" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45.0dip"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/ssearch_browser_hint"
+            android:imeOptions="actionSearch"
+            android:includeFontPadding="false"
+            android:inputType="textUri"
+            android:paddingLeft="10.0dip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="@color/ssearch_common_title"
+            android:textColorHint="@color/ssearch_common_subtitle"
+            android:textCursorDrawable="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

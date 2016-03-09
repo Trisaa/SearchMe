@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="ssearch_theme_primary">#6870e9</color>
+    <color name="ssearch_theme_primary_dark">#303f9f</color>
+    <color name="ssearch_theme_accent">#6870e9</color>
+    <color name="ssearch_theme_window_bg">#f1f1f1</color>
+    <color name="ssearch_divider_color">#19000000</color>
+    <color name="ssearch_btn_pressed">#0688db</color>
+    <color name="ssearch_btn_focused">#0799f6</color>
+    <color name="ssearch_list_item_pressed">#26ffffff</color>
+    <color name="ssearch_common_bg">#FFF1F1F1</color>
+    <color name="ssearch_common_foreground">#FFFAFAFA</color>
+    <color name="ssearch_common_title">#6b6b6b</color>
+    <color name="ssearch_common_subtitle">#b6b6b6</color>
+    <color name="ssearch_common_ripple">#FFE8E8E8</color>
+    <color name="ssearch_card_category">#555</color>
+    <color name="ssearch_card_title">#6b6b6b</color>
+    <color name="ssearch_card_summary">#b6b6b6</color>
+    <color name="ssearch_setting_pressed">#fff5f5f5</color>
+    <color name="ssearch_stock_down">#ffdb4437</color>
+    <color name="ssearch_stock_up">#ff0f9d58</color>
+    <color name="ssearch_card_img_bg">#fff8f8f8</color>
+    <color name="ssearch_local_list_item_text">#ffffffff</color>
+    <color name="ssearch_list_text_color">#6b6b6b</color>
+    <color name="ssearch_browser_progressbar_bg">#c8d8f3</color>
+    <color name="ssearch_back_bg_pressed">#33000000</color>
+
+</resources>

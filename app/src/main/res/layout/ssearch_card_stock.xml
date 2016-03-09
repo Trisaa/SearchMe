@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/stock_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout style="@style/ssearch_card_item_layout" >
+
+        <RelativeLayout
+            android:id="@+id/card_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_card_header_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/card_header_menu"
+                android:layout_width="50.0dip"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ssearch_selector_list_item" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ssearch_ic_menu" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/card_header_title"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:textColor="@color/ssearch_card_category"
+                android:textSize="@dimen/search_card_category_text_size" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/stock_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" />
+    </LinearLayout>
+
+</LinearLayout>

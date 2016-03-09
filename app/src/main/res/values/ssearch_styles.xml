@@ -1,0 +1,178 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="SSearchTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/ssearch_common_title</item>
+        <item name="android:textColorSecondary">@color/ssearch_common_subtitle</item>
+        <item name="android:windowBackground">@color/ssearch_theme_window_bg</item>
+    </style>
+
+    <!-- Search -->
+    <style name="SearchTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@color/ssearch_common_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:requiresFadingEdge">none</item>
+    </style>
+
+    <style name="ssearch_tv_style">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/ssearch_card_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingRight">15.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="ssearch_hotword_large_item_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:background">@drawable/ssearch_selector_list_item</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="ssearch_hotword_large_item_tv">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="ssearch_hotword_item_layout">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:addStatesFromChildren">true</item>
+        <item name="android:layout_height">@dimen/search_hotword_item_height</item>
+    </style>
+
+    <style name="ssearch_hotword_large_icon_iv">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#F4F4F4</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="ssearch_hotword_icon_iv">
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginRight">3.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+    </style>
+
+    <style name="ssearch_hotword_flag_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_marginLeft">3.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ssearch_card_item_layout">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/ssearch_card_background</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/search_card_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/search_card_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/search_card_marginBottom</item>
+    </style>
+
+    <style name="ssearch_suggestion_item_layout">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ssearch_selector_list_item</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/search_suggestion_item_height</item>
+        <item name="android:paddingLeft">@dimen/search_suggestion_item_margin_left</item>
+        <item name="android:paddingRight">@dimen/search_suggestion_item_margin_right</item>
+    </style>
+
+    <style name="ssearch_card_item_iv">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:background">@color/ssearch_card_img_bg</item>
+    </style>
+
+    <style name="ssearch_card_video_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/search_card_video_padding</item>
+        <item name="android:paddingRight">@dimen/search_card_video_padding</item>
+        <item name="android:paddingBottom">@dimen/search_card_video_padding</item>
+    </style>
+
+    <style name="ssearch_card_video_item_layout">
+        <item name="android:layout_margin">4.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/search_card_video_item_height</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="ssearch_card_bottom_layout">
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingTop">3.0dip</item>
+        <item name="android:paddingBottom">1.0dip</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/ssearch_gradient_bg</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="ssearch_card_item_bottom_title">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ssearch_card_item_time">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ssearch_card_stock_manage_item">
+        <item name="android:textColor">@color/ssearch_card_title</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/ssearch_selector_list_item</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">@dimen/search_hotword_item_height</item>
+    </style>
+
+</resources>

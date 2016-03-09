@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_base_view"
+    android:layout_width="wrap_content"
+    android:background="@drawable/ssearch_card_background"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/ssearch_divider_color"
+        android:dividerHeight="@dimen/ssearch_divider_height"
+        android:orientation="vertical" >
+    </ListView>
+
+</LinearLayout>

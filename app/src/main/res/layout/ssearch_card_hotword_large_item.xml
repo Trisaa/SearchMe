@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item"
+    style="@style/ssearch_hotword_large_item_layout" >
+
+    <ImageView
+        android:id="@+id/hotword_iv"
+        style="@style/ssearch_hotword_large_icon_iv" />
+
+    <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+        <TextView
+            android:id="@+id/hotword_tv"
+            style="@style/ssearch_hotword_large_item_tv" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/hotword_flag_iv"
+        style="@style/ssearch_hotword_flag_style" />
+
+</RelativeLayout>

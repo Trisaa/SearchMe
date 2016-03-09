@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_footer_more"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_card_footer_height"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ssearch_divider_horizontal" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:background="@drawable/ssearch_selector_list_item"
+        android:gravity="center"
+        android:text="@string/ssearch_more"
+        android:textColor="@color/ssearch_theme_primary"
+        android:textSize="@dimen/search_card_category_text_size" />
+
+</LinearLayout>

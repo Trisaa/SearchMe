@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:divider="@color/ssearch_divider_color"
+    android:dividerHeight="@dimen/ssearch_divider_height"
+    android:listSelector="@drawable/ssearch_selector_list_item"
+    android:orientation="vertical" >
+
+</ListView>

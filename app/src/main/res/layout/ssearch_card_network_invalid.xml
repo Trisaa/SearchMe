@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_data_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="0.0dip"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:visibility="gone" >
+
+    <LinearLayout
+        style="@style/ssearch_card_item_layout"
+        android:orientation="horizontal"
+        android:paddingBottom="15.0dip"
+        android:paddingTop="15.0dip" >
+
+        <ImageView
+            android:id="@+id/funny_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ssearch_ic_funny_pictures" />
+
+        <ImageView
+            android:id="@+id/game_center_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ssearch_ic_solo_game" />
+
+        <ImageView
+            android:id="@+id/news_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ssearch_ic_solo_news" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/network_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40.0dip"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/error_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ssearch_network_invalid"
+            android:text="@string/ssearch_network_invalid"
+            android:textColor="@color/ssearch_common_subtitle"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/connect_retry"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5.0dip"
+            android:layout_marginTop="15.0dip"
+            android:background="@drawable/ssearch_selector_rectangle_btn"
+            android:minWidth="90dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="@string/ssearch_connect_retry"
+            android:textColor="@color/ssearch_common_title" />
+    </LinearLayout>
+
+</LinearLayout>

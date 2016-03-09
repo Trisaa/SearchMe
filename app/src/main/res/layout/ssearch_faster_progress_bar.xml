@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="2.0dip"
+    android:background="@android:color/black" >
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:max="100"
+        android:progressDrawable="@drawable/ssearch_progress_bar_color" />
+
+    <View
+        android:id="@+id/fly_star"
+        android:layout_width="57.0dip"
+        android:layout_height="fill_parent"
+        android:background="@drawable/ssearch_progress_move_item"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hotword_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout style="@style/ssearch_card_item_layout" >
+
+        <com.solo.search.card.view.CardHeaderView
+            android:id="@id/card_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_card_header_height" />
+
+        <include layout="@layout/ssearch_divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/top_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_hotword_large_item_height"
+            android:layout_marginTop="@dimen/search_card_marginTop"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/search_hotword_small_item_margin"
+            android:paddingRight="@dimen/search_hotword_small_item_margin" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/search_card_marginBottom"
+            android:orientation="vertical"
+            android:padding="@dimen/search_hotword_small_item_margin" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

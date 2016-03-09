@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ssearch_common_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_box"
+        layout="@layout/ssearch_box_view" />
+
+    <ScrollView
+        android:id="@+id/search_main_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_box"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingBottom="40.0dip"
+            android:paddingTop="@dimen/search_card_marginTop" >
+
+            <com.solo.search.widget.SuggestionPanelView
+                android:id="@+id/search_sugges_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/search_sugess_list_layout"
+                style="@style/ssearch_card_item_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0.0dip"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/search_history_list_margin" >
+
+                    <TextView
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10.0dip"
+                        android:text="@string/ssearch_history"
+                        android:textColor="@color/ssearch_common_title" />
+
+                    <ImageView
+                        android:id="@+id/search_clean_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ssearch_selector_setting_item"
+                        android:duplicateParentState="false"
+                        android:paddingLeft="10.0dip"
+                        android:paddingRight="10.0dip"
+                        android:src="@drawable/ssearch_ic_trash_dark"
+                        android:tint="#999999" />
+                </LinearLayout>
+
+                <com.solo.search.widget.InnerScrollGridView
+                    android:id="@+id/search_sugess_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5.0dip"
+                    android:listSelector="@drawable/ssearch_selector_list_item"
+                    android:numColumns="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/hotword_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

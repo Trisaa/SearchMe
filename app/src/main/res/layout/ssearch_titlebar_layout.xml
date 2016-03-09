@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ssearch_titlebar_height"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/back_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/ssearch_selector_back_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip" >
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ssearch_back" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0.0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:ellipsize="end"
+        android:paddingLeft="17.0dip"
+        android:singleLine="true"
+        android:textColor="@android:color/white"
+        android:textSize="20.0sp" />
+
+    <LinearLayout
+        android:id="@+id/right_btn_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/ssearch_selector_back_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="16.0dip"
+        android:paddingRight="16.0dip"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/right_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

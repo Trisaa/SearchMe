@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/funny_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout style="@style/ssearch_card_item_layout" >
+
+        <com.solo.search.card.view.CardHeaderView
+            android:id="@+id/card_header"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/search_card_header_height" />
+
+        <include layout="@layout/ssearch_divider_horizontal" />
+
+        <LinearLayout
+            android:id="@+id/funny_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/search_card_video_padding" >
+
+            <RelativeLayout
+                android:id="@+id/card_funny_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_card_big_item_height"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip" >
+
+                <com.android.volley.toolbox.NetworkImageView
+                    android:id="@+id/funny_iv1"
+                    style="@style/ssearch_card_item_iv" />
+
+                <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+                    <TextView
+                        android:id="@+id/funny_title_tv1"
+                        style="@style/ssearch_card_item_bottom_title" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                style="@style/ssearch_card_video_layout"
+                android:layout_marginTop="8.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/card_funny_layout2"
+                    style="@style/ssearch_card_video_item_layout" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/funny_iv2"
+                        style="@style/ssearch_card_item_iv" />
+
+                    <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+                        <TextView
+                            android:id="@+id/funny_title_tv2"
+                            style="@style/ssearch_card_item_bottom_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card_funny_layout3"
+                    style="@style/ssearch_card_video_item_layout" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/funny_iv3"
+                        style="@style/ssearch_card_item_iv" />
+
+                    <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+                        <TextView
+                            android:id="@+id/funny_title_tv3"
+                            style="@style/ssearch_card_item_bottom_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ssearch_card_video_layout"
+                android:layout_marginTop="8.0dip" >
+
+                <RelativeLayout
+                    android:id="@+id/card_funny_layout4"
+                    style="@style/ssearch_card_video_item_layout" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/funny_iv4"
+                        style="@style/ssearch_card_item_iv" />
+
+                    <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+                        <TextView
+                            android:id="@+id/funny_title_tv4"
+                            style="@style/ssearch_card_item_bottom_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/card_funny_layout5"
+                    style="@style/ssearch_card_video_item_layout" >
+
+                    <com.android.volley.toolbox.NetworkImageView
+                        android:id="@+id/funny_iv5"
+                        style="@style/ssearch_card_item_iv" />
+
+                    <LinearLayout style="@style/ssearch_card_bottom_layout" >
+
+                        <TextView
+                            android:id="@+id/funny_title_tv5"
+                            style="@style/ssearch_card_item_bottom_title" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <include layout="@layout/ssearch_card_footer" />
+    </LinearLayout>
+
+</LinearLayout>

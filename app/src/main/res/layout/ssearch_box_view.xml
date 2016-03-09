@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/search_box_height"
+    android:background="@color/ssearch_theme_primary"
+    android:paddingBottom="@dimen/search_bar_padding_bottom"
+    android:paddingLeft="@dimen/search_bar_margin"
+    android:paddingRight="@dimen/search_bar_margin"
+    android:paddingTop="@dimen/search_bar_padding_top" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="bottom"
+        android:clickable="true"
+        android:focusable="true" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_box_height"
+            android:layout_centerInParent="true"
+            android:background="@drawable/ssearch_bar_bg_white"
+            android:ellipsize="end"
+            android:inputType="none"
+            android:singleLine="true"
+            android:textColorHint="@color/ssearch_common_subtitle" />
+
+        <LinearLayout
+            android:id="@+id/search_engine_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/search_box_big_padding"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/search_engine_icon"
+                android:layout_width="@dimen/search_box_icon_size"
+                android:layout_height="@dimen/search_box_icon_size"
+                android:duplicateParentState="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_icon_layout"
+            android:layout_width="38.0dip"
+            android:layout_height="@dimen/search_box_content_size"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/search_box_big_padding"
+            android:gravity="center" >
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="@dimen/search_box_icon_size"
+                android:layout_height="@dimen/search_box_icon_size"
+                android:duplicateParentState="true"
+                android:scaleType="center"
+                android:src="@drawable/ssearch_selector_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/search_clear_layout"
+            android:layout_width="38.0dip"
+            android:layout_height="@dimen/search_box_content_size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_icon_layout"
+            android:gravity="center"
+            android:visibility="gone" >
+
+            <ImageView
+                android:layout_width="@dimen/search_box_icon_size"
+                android:layout_height="@dimen/search_box_icon_size"
+                android:duplicateParentState="true"
+                android:scaleType="center"
+                android:src="@drawable/ssearch_selector_clear" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/search_edit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_box_content_size"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/search_clear_layout"
+            android:layout_toRightOf="@id/search_engine_layout"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:hint="@string/ssearch_edit_hint"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:includeFontPadding="false"
+            android:maxLength="50"
+            android:paddingLeft="@dimen/search_box_big_padding"
+            android:singleLine="true"
+            android:textColor="@color/ssearch_common_title"
+            android:textColorHint="@color/ssearch_common_subtitle"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/search_box_hint_text" />
+    </RelativeLayout>
+
+</RelativeLayout>

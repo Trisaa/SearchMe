@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/app_result_layout"
+        style="@style/ssearch_card_item_layout"
+        android:layout_marginTop="0.0dip" >
+
+        <com.solo.search.widget.InnerScrollGridView
+            android:id="@+id/gridview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5.0dip"
+            android:listSelector="@drawable/ssearch_selector_list_item"
+            android:numColumns="5" />
+
+        <LinearLayout
+            android:id="@+id/app_search_more_item"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ssearch_selector_list_item"
+            android:orientation="vertical" >
+
+            <include layout="@layout/ssearch_divider_horizontal" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48.0dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12.0dip"
+                android:paddingRight="12.0dip" >
+
+                <TextView
+                    android:layout_width="0.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:paddingRight="16.0dip"
+                    android:text="@string/ssearch_show_more_apps"
+                    android:textColor="@color/ssearch_card_title" />
+
+                <ImageView
+                    android:id="@+id/more_app_arraw"
+                    android:layout_width="18.0dip"
+                    android:layout_height="18.0dip"
+                    android:rotation="270.0"
+                    android:src="@drawable/ssearch_back"
+                    android:tint="@color/ssearch_card_summary" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_result_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</LinearLayout>

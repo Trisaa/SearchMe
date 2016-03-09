@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adUnit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ssearch_selector_list_item"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/divider"
+        android:layout_marginBottom="5.0dip"
+        layout="@layout/ssearch_divider_horizontal" />
+
+    <com.solo.search.widget.MultiViewPager
+        android:id="@+id/ad_pager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_card_native_ad_item_height"
+        android:overScrollMode="never" />
+
+</LinearLayout>

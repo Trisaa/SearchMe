@@ -1,0 +1,93 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Common -->
+    <dimen name="ssearch_divider_width">1px</dimen>
+    <dimen name="ssearch_divider_height">1px</dimen>
+    <dimen name="ssearch_item_height">56.0dp</dimen>
+    <dimen name="ssearch_title">18sp</dimen>
+    <dimen name="ssearch_category">16.0sp</dimen>
+    <dimen name="ssearch_summary">12.0sp</dimen>
+    <dimen name="ssearch_titlebar_height">56.0dp</dimen>
+    <dimen name="ssearch_common_round_corner">2dp</dimen>
+    <dimen name="ssearch_dialog_title_height">56.0dip</dimen>
+    <dimen name="ssearch_app_icon_size">48dp</dimen>
+    <!-- Shadow -->
+    <dimen name="ssearch_card_projection">2dp</dimen>
+    <dimen name="ssearch_tab_projection">4dp</dimen>
+    <dimen name="ssearch_actionbar_projection">4dp</dimen>
+    <dimen name="ssearch_floating_button_projection">6dp</dimen>
+    <dimen name="ssearch_action_button_projection">6dp</dimen>
+    <!-- ProgressBar -->
+    <dimen name="common_progressbar">50dp</dimen>
+    <!-- Search -->
+    <dimen name="search_box_height">48.0dip</dimen>
+    <dimen name="search_list_title_font_size">13.0sp</dimen>
+    <dimen name="search_list_info_font_size">12.0sp</dimen>
+    <dimen name="search_list_item_icon_size">32.0dip</dimen>
+    <dimen name="search_history_layout_height">52.0dip</dimen>
+    <dimen name="search_history_item_font_size">15.0sp</dimen>
+    <dimen name="search_history_list_margin">8.0dip</dimen>
+    <dimen name="search_bar_margin">8.0dip</dimen>
+    <dimen name="search_bar_padding_top">6.0dip</dimen>
+    <dimen name="search_bar_padding_bottom">2.0dip</dimen>
+    <dimen name="search_card_marginLeft">5.0dip</dimen>
+    <dimen name="search_card_marginRight">5.0dip</dimen>
+    <dimen name="search_card_marginTop">5.0dip</dimen>
+    <dimen name="search_card_marginBottom">5.0dip</dimen>
+    <dimen name="search_hotword_item_height">40.0dip</dimen>
+    <dimen name="search_hotword_large_item_height">95.0dip</dimen>
+    <dimen name="search_hotword_small_item_margin">4.0dip</dimen>
+    <dimen name="search_news_item_padding_left">13.0dip</dimen>
+    <dimen name="search_news_item_padding_right">13.0dip</dimen>
+    <dimen name="search_news_item_height">120.0dip</dimen>
+    <dimen name="search_news_item_image_width">135.0dip</dimen>
+    <dimen name="search_news_item_image_height">90.0dip</dimen>
+    <dimen name="search_card_category_text_size">20sp</dimen>
+    <dimen name="search_card_title_text_size">17.0sp</dimen>
+    <dimen name="search_card_summary_text_size">15.0sp</dimen>
+    <dimen name="search_header_height">126.0dip</dimen>
+    <dimen name="search_box_content_size">38.0dip</dimen>
+    <dimen name="search_box_icon_size">24.0dip</dimen>
+    <dimen name="search_box_hint_text">16sp</dimen>
+    <dimen name="search_header_edit_height_open">42.0dip</dimen>
+    <dimen name="search_box_small_padding">6.0dip</dimen>
+    <dimen name="search_box_big_padding">12.0dip</dimen>
+    <dimen name="search_box_text_small_paddingLeft">8.0dip</dimen>
+    <dimen name="search_box_text_big_paddingLeft">38.0dip</dimen>
+    <dimen name="search_header_logo_width">138.0dip</dimen>
+    <dimen name="search_header_logo_height">40.0dip</dimen>
+    <dimen name="search_header_logo_margin_top">25.0dip</dimen>
+    <dimen name="search_small_header_margin_left">14.0dip</dimen>
+    <dimen name="search_small_header_width">75.9dip</dimen>
+    <dimen name="search_small_header_height">22.0dip</dimen>
+    <dimen name="search_suggestion_item_margin_left">12.0dip</dimen>
+    <dimen name="search_suggestion_item_margin_right">12.0dip</dimen>
+    <dimen name="search_suggestion_item_height">50.0dip</dimen>
+    <dimen name="search_card_ads_layout_height">56.0dip</dimen>
+    <dimen name="search_card_stock_item_height">68.0dip</dimen>
+    <dimen name="search_card_big_item_height">170.0dip</dimen>
+    <dimen name="search_card_video_item_height">105.0dip</dimen>
+    <dimen name="search_card_video_padding">8.0dip</dimen>
+    <dimen name="search_card_photo_item_height">200.0dip</dimen>
+    <dimen name="search_card_header_height">45.0dip</dimen>
+    <dimen name="search_card_footer_height">48.0dip</dimen>
+    <dimen name="search_card_ad_item_width_margin">16.0dip</dimen>
+    <dimen name="search_card_native_ad_item_height">310.0dip</dimen>
+    <dimen name="search_card_ad_icon_size">48.0dip</dimen>
+    <dimen name="search_card_ad_image_height">160.0dip</dimen>
+    <dimen name="search_card_ad_large_text_size">16.0sp</dimen>
+    <dimen name="search_browser_progress_bar_height">2.0dip</dimen>
+
+    <!-- Floating Action Button -->
+    <dimen name="ssearch_fab_size_normal">56dp</dimen>
+    <dimen name="ssearch_fab_size_mini">40dp</dimen>
+    <dimen name="ssearch_fab_shadow_size">12dp</dimen>
+    <dimen name="ssearch_fab_elevation_lollipop">8dp</dimen>
+    <dimen name="ssearch_fab_margin_right">48.0dp</dimen>
+    <dimen name="ssearch_fab_margin_bottom">48.0dip</dimen>
+    <dimen name="ssearch_actionBarSize">56.0dip</dimen>
+
+</resources>

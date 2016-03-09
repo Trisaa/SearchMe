@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_card_header_height"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/card_header_refresh"
+        android:layout_width="50.0dip"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ssearch_selector_list_item" >
+
+        <ImageView
+            android:id="@+id/card_refresh_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ssearch_card_refresh_normal" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/card_header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/card_header_refresh"
+        android:gravity="center_vertical"
+        android:paddingLeft="15.0dip"
+        android:textColor="@color/ssearch_card_category"
+        android:textSize="@dimen/search_card_category_text_size" />
+
+</RelativeLayout>

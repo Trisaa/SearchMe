@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.solo.search.browser.widget.AssistInputBar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/assist_input_bar"
+    android:layout_width="fill_parent"
+    android:layout_height="40.0dip"
+    android:layout_gravity="bottom"
+    android:background="#a0000000"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/three_w_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_threewdot"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/slash"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_slash"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/dot"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_dot"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/dot_com"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_dot_com"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/dot_country"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_dot_country"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+
+        <TextView
+            android:id="@+id/mobile_dot"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10.0dip"
+            android:paddingRight="10.0dip"
+            android:text="@string/ssearch_mobile_dot"
+            android:textColor="@android:color/white"
+            android:textSize="15.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_gravity="end"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@null"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:rotation="180.0"
+            android:src="@drawable/ssearch_next_cursor" />
+
+        <ImageView
+            android:id="@+id/forward_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="end"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@null"
+            android:paddingLeft="15.0dip"
+            android:paddingRight="15.0dip"
+            android:src="@drawable/ssearch_next_cursor" />
+    </LinearLayout>
+
+</com.solo.search.browser.widget.AssistInputBar>

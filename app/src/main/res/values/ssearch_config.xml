@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="ssearch_config_search_bar">true</bool>
+    <bool name="ssearch_config_search_app">true</bool>
+    <bool name="ssearch_config_search_contact">true</bool>
+    <bool name="ssearch_config_search_message">true</bool>
+    <bool name="ssearch_config_search_music">true</bool>
+    <bool name="ssearch_config_search_bookmark">true</bool>
+    <bool name="ssearch_config_search_web">true</bool>
+    <bool name="ssearch_config_show_hotword">true</bool>
+    <bool name="ssearch_config_card_manage">true</bool>
+
+    <!-- 1 SEARCH_CONTAINS_EACH_CHAR; 2 SEARCH_CONTAINS_TEXT; 3 SEARCH_CONTAINS_WORD_STARTS_WITH_TEXT; 4 SEARCH_STARTS_WITH_TEXT; -->
+    <integer name="ssearch_config_search_pattern">1</integer>
+    <!-- 0 Solo, 1 Google, 2 Bing, 3 Yahoo, 4 DuckDuckGo, 5 Baidu , 6 Aol -->
+    <integer name="ssearch_config_search_engine">0</integer>
+    <!-- INIT CARD:FREQUENCE  VISIBILITY -->
+    <integer name="ssearch_hotnews_visibility">0</integer>
+    <integer name="ssearch_funny_visibility">1</integer>
+    <integer name="ssearch_game_visibility">1</integer>
+    <integer name="ssearch_video_visibility">1</integer>
+    <integer name="ssearch_stock_visibility">0</integer>
+    <integer name="ssearch_currency_visibility">0</integer>
+    <!-- 200 HOTNEWS, 225 FUNNY, 250 GAME, 300 VIDEO, 400 STOCk, 500 CURRENCY -->
+    <integer name="ssearch_first_visible">200</integer>
+    <integer name="ssearch_second_visible">225</integer>
+    <integer name="ssearch_third_visible">250</integer>
+    <integer name="ssearch_forth_visible">300</integer>
+    <integer name="ssearch_fifth_visible">400</integer>
+    <integer name="ssearch_sixth_visible">500</integer>
+    <!-- Important Key -->
+    <string name="ssearch_ysdk_app_id" translatable="false">YTOla45e</string>
+    <string name="ssearch_fb_banner_id" translatable="false">1560511240859053_1609309782645865</string>
+    <string name="ssearch_fb_native_ads_id" translatable="false">1560511240859053_1598184497091727</string>
+
+    <!-- Search Url -->
+    <string name="ssearch_solo_search_default_base" translatable="false">https://www.google.com/m/search?q=%1$s</string>
+    <string name="ssearch_home_baidu_base" translatable="false">http://m.baidu.com/?from=%1$s</string>
+    <string name="ssearch_google_base" translatable="false">https://www.google.com/m/search?q=%1$s</string>
+    <string name="ssearch_baidu_base" translatable="false">http://m.baidu.com/s?from=%1$s&amp;word=%2$s</string>
+    <string name="ssearch_yahoo_base" translatable="false">http://search.yahoo.com/search?p=%1$s</string>
+    <string name="ssearch_duckduckgo_base" translatable="false">https://duckduckgo.com/?t=solo&amp;q=%1$s</string>
+    <string name="ssearch_bing_base" translatable="false">http://www.bing.com/search?q=%1$s</string>
+    <string name="ssearch_aol_base" translable="false">http://search.aol.com/aol/search?q=%1$s</string>
+    <string name="ssearch_suggest_google_base" translatable="false">http://www.google.com/complete/search?hl=%1$s&amp;client=android&amp;q=%2$s</string>
+    <string name="ssearch_suggest_baidu_base" translatable="false">http://m.baidu.com/su?from=%1$s&amp;wd=%2$s&amp;action=opensearch</string>
+    <string name="ssearch_suggest_duckduckgo_base" translatable="false">https://duckduckgo.com/ac/?q=%1$s</string>
+    <string name="ssearch_suggest_yandex_base" translatable="false">http://suggest.yandex.ru/suggest-ya.cgi?part=%1$s&amp;lr=213&amp;n=10&amp;mob=1&amp;srv=sololauncher</string>
+
+    <!-- Search Engine -->
+    <string name="ssearch_solo" translatable="false">Solo</string>
+    <string name="ssearch_google" translatable="false">Google</string>
+    <string name="ssearch_baidu" translatable="false">Baidu</string>
+    <string name="ssearch_duckduckgo" translatable="false">DuckDuckGo</string>
+    <string name="ssearch_bing" translatable="false">Bing</string>
+    <string name="ssearch_yahoo" translatable="false">Yahoo</string>
+    <string name="ssearch_aol" translatable="false">Aol</string>
+    <string name="ssearch_card_ads" translatable="false">Ads</string>
+    <string name="ssearch_threewdot" translatable="false">www.</string>
+    <string name="ssearch_slash" translatable="false">/</string>
+    <string name="ssearch_dot" translatable="false">.</string>
+    <string name="ssearch_dot_com" translatable="false">.com</string>
+    <string name="ssearch_dot_country" translatable="false">.net</string>
+    <string name="ssearch_mobile_dot" translatable="false">m.</string>
+
+</resources>

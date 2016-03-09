@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ads_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingBottom="@dimen/search_card_marginBottom"
+    android:paddingLeft="@dimen/search_card_marginLeft"
+    android:paddingRight="@dimen/search_card_marginRight" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/search_card_ads_layout_height"
+        android:background="@drawable/ssearch_card_background" >
+
+        <ImageView
+            android:id="@+id/ads_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/close_ads"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dip"
+            android:src="@drawable/ssearch_card_ads_close"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

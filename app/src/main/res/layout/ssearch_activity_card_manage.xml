@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ssearch_common_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/ssearch_titlebar" />
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ssearch_card_background_top"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <com.solo.search.widget.dragsortlistview.DragSortListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/ssearch_divider_color"
+            android:dividerHeight="@dimen/ssearch_divider_height" />
+    </LinearLayout>
+
+</LinearLayout>

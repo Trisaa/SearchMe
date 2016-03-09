@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/search_news_item_height"
+    android:background="@drawable/ssearch_selector_list_item"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@id/divider"
+        layout="@layout/ssearch_divider_horizontal" />
+
+    <RelativeLayout
+        android:id="@+id/news_element"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:paddingBottom="10.0dip"
+        android:paddingLeft="@dimen/search_news_item_padding_left"
+        android:paddingRight="@dimen/search_news_item_padding_right"
+        android:paddingTop="10.0dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/news_image"
+                android:layout_width="@dimen/search_news_item_image_width"
+                android:layout_height="@dimen/search_news_item_image_height"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10.0dip"
+                android:background="@color/ssearch_card_img_bg"
+                android:gravity="center"
+                android:scaleType="centerCrop"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/news_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignTop="@id/news_image"
+                android:layout_toLeftOf="@id/news_image"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textColor="@color/ssearch_card_title"
+                android:textSize="@dimen/search_card_title_text_size" />
+
+            <TextView
+                android:id="@+id/news_author"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/news_image"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/news_image"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/ssearch_card_title"
+                android:textSize="@dimen/search_card_summary_text_size"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout style="@style/ssearch_suggestion_item_layout" >
+
+        <ImageView
+            android:id="@id/search_list_item_icon"
+            android:layout_width="@dimen/search_list_item_icon_size"
+            android:layout_height="@dimen/search_list_item_icon_size"
+            android:layout_margin="4.0dip" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.0dip"
+            android:layout_weight="1.0"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/search_list_item_title"
+                style="@style/ssearch_tv_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5.0dip"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@id/search_list_item_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4.0dip"
+                android:textColor="@color/ssearch_card_summary"
+                android:textSize="@dimen/search_list_info_font_size" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/search_list_item_contact_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="14.0dip"
+            android:background="@drawable/ssearch_selector_list_item"
+            android:gravity="center"
+            android:src="@drawable/ssearch_sms"
+            android:textColor="@color/ssearch_local_list_item_text" />
+
+        <View
+            android:layout_width="@dimen/ssearch_divider_width"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8.0dip"
+            android:layout_marginTop="8.0dip"
+            android:background="@color/ssearch_divider_color" />
+
+        <ImageView
+            android:id="@+id/search_list_item_contact_dial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="8.0dip"
+            android:background="@drawable/ssearch_selector_list_item"
+            android:gravity="center"
+            android:src="@drawable/ssearch_phone"
+            android:textColor="@color/ssearch_local_list_item_text" />
+    </LinearLayout>
+
+</LinearLayout>
