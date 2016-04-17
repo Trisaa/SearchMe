@@ -255,9 +255,7 @@ public class SearchActivity extends BaseTranslucentStatusActivity implements OnC
 	}
 
 	/**
-	 * 刷新卡片页面。
-	 * 
-	 * @param refreshedCards
+	 * 刷新卡片页面
 	 */
 	private void refreshAllCardViews() {
 		if (mCards != null) {
